@@ -348,81 +348,84 @@ footer .social a {
 }
 
 @media (max-width: 1024px) {
-  .text-runner {
-      font-size: 40px;
-      padding: 20px;
+  .content-container {
+      flex-direction: column;
+      padding: 30px;
   }
 
-  .text-section {
-      max-width: 90%;
-      margin-right: 0;
-      height: auto;
+  header nav ul {
+      flex-direction: column;
+      align-items: flex-start;
   }
 
-  .image-box img {
-      width: 100%;
-      height: auto;
+  header nav ul li {
+      margin-bottom: 10px;
   }
 
-  .grid-container {
-      grid-template-columns: repeat(2, 1fr);
-  }
-
-  .missi p {
-      margin-right: 0;
-  }
-
-  .missi h2 {
-      margin-left: 0;
-      font-size: 20px;
+  .book-trip {
+      margin-top: 10px;
   }
 }
 
-/* For mobile phones */
+
 @media (max-width: 768px) {
   header {
       flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .text-runner p {
+      font-size: 20px;
       text-align: center;
   }
 
-  nav ul {
-      flex-direction: column;
-      gap: 10px;
-  }
-
-  .text-runner {
-      font-size: 30px;
-      padding: 15px;
+  .content-container {
+      padding: 20px;
   }
 
   .text-section h1 {
-      font-size: 30px;
+      font-size: 24px;
   }
 
-  .grid-container {
+  .text-section h3 {
+      font-size: 18px;
+  }
+
+  .image-box img {
+      max-width: 100%;
+      height: auto;
+  }
+
+  .numbers .grid-container {
+      display: grid;
       grid-template-columns: 1fr;
-  }
-
-  .img {
-      width: 100%;
-      margin: 0;
-  }
-
-  .missi h2 {
-      font-size: 18px;
-  }
-
-  .missi p {
-      font-size: 18px;
-      margin: 0;
+      gap: 20px;
   }
 
   .instagram-widget {
-      font-size: 14px;
+      text-align: center;
   }
 
   footer {
-      padding: 10px;
       font-size: 14px;
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .content-container {
+      padding: 100px;
+  }
+
+  .text-section h1 {
+      font-size: 36px;
+  }
+
+  .text-section p {
+      font-size: 18px;
+  }
+
+  footer {
+      font-size: 18px;
   }
 }
