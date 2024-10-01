@@ -403,37 +403,81 @@ footer .social a {
     border-radius: 50px;
     
 }
-
 @media (max-width: 1024px) {
     .hero {
         flex-direction: column;
-        padding: 50px;
-        height: auto;
+        text-align: center;
     }
 
-    .content h1 {
-        font-size: 60px;
+    .hero .content {
+        max-width: 100%;
     }
 
-    .content p {
-        font-size: 25px;
+    .hero h1 {
+        font-size: 36px;
     }
 
-    .plane {
-        width: 100%;
+    .hero p {
+        font-size: 20px;
     }
 
     .card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    header {
         flex-direction: column;
     }
 
-    .card {
-        width: 100%;
+    nav ul {
+        flex-direction: column;
+        align-items: center;
     }
 
-    .destination-section h2 {
-        font-size: 40px;
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
     }
 
-    
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+
+    .news, .hotel, .partners {
+        padding: 20px;
+    }
+
+    .carousel-images img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .book-trip, .hero .btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    footer {
+        padding: 10px;
+    }
 }
