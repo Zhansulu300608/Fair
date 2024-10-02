@@ -264,7 +264,8 @@ footer .social a {
     }
 
     .stats-section {
-        flex-direction: column;
+        
+        flex-direction: row;
         align-items: center;
     }
 
